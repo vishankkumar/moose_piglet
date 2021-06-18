@@ -19,21 +19,39 @@
   uniform_refine = 1
 []
 
+[GlobalParams]
+  x1 = 0
+  y1 = 0
+  x2 = 30
+  y2 = 50
+  # derivative_order = 2
+[]
+
 [Variables]
   [./eta]
     order = FIRST
     family = LAGRANGE
-    [./InitialCondition]
-      type = SmoothCircleIC
-      x1 = 25.0
-      y1 = 25.0
-      radius = 6.0
-      invalue = 0.9
-      outvalue = 0.1
-      int_width = 3.0
-    [../]
+    #[./InitialCondition]
+    #  type = SmoothCircleIC
+    #  x1 = 25.0
+    #  y1 = 25.0
+    #  radius = 6.0
+    #  invalue = 0.9
+    #  outvalue = 0.1
+    #  int_width = 3.0
+    #[../]
   [../]
 []
+
+[ICs]
+  [./eta]
+    type = BoundingBoxIC
+    variable = eta
+    inside = 0
+    outside = 1
+  [../]
+[]
+
 
 [Kernels]
   [./detadt]
@@ -59,7 +77,7 @@
     type = GenericConstantMaterial
     block = 0
     prop_names  = 'L'
-    prop_values = '1'
+    prop_values = '2.5'
   [../]
 
   [./free_energy]
@@ -85,7 +103,7 @@
   nl_rel_tol = 1.0e-11
 
   start_time = 0.0
-  num_steps = 2
+  num_steps = 20
   dt = 0.5
 []
 

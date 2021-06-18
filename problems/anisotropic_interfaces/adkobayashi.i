@@ -1,10 +1,17 @@
 [Mesh]
   type = GeneratedMesh
   dim = 2
-  nx = 32
-  ny = 32
+  nx = 20
+  ny = 20
   xmax = 0.7
   ymax = 0.7
+[]
+
+[GlobalParams]
+  x1 = 0
+  y1 = 0
+  x2 = 0.2
+  y2 = 0.7
 []
 
 [Variables]
@@ -25,6 +32,14 @@
     outvalue = 0
     invalue = 1
   []
+
+  #[wIC]
+  #  type = BoundingBoxIC
+  #  variable = w
+  #  inside = 0
+  #  outside = 1
+  #[]
+
 []
 
 [Kernels]
@@ -60,7 +75,7 @@
     type = ADCoefCoupledTimeDerivative
     variable = T
     v = w
-    coef = -1.8 #This is -K from kobayashi's paper
+    coef = -1.8 #This is -K from kobayashis paper
   []
 []
 
@@ -91,19 +106,43 @@
   type = Transient
   solve_type = NEWTON
   scheme = bdf2
-  petsc_options_iname = '-pc_type'
-  petsc_options_value = 'lu      '
+  automatic_scaling = true
+  steady_state_detection = true
+  # petsc_options = '-ksp_monitor_true_residual'
+  petsc_options_iname = '-pc_type -pc_hypre_type'
+  petsc_options_value = 'hypre boomeramg'
 
   nl_rel_tol = 1e-08
   l_tol = 1e-4
   l_max_its = 30
 
   dt = 0.001
-  num_steps = 6
+  num_steps = 500
+[]
+
+[Adaptivity]
+  marker = error_frac
+  max_h_level = 2
+  [Indicators]
+    [phase_jump]
+      type = GradientJumpIndicator
+      variable = w
+      scale_by_flux_faces = true
+    []
+  []
+  [Markers]
+    [error_frac]
+      type = ErrorFractionMarker
+      coarsen = 0.35
+      indicator = phase_jump
+      refine = 0.8
+    []
+  []
 []
 
 [Outputs]
   exodus = true
-  perf_graph = true
-  execute_on = 'INITIAL FINAL'
+  console = false  
+  #perf_graph = true
+  #execute_on = 'INITIAL FINAL'
 []

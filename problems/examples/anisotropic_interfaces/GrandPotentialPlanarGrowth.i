@@ -261,7 +261,7 @@
   nl_max_its = 15
   nl_rel_tol = 1.0e-8
   nl_abs_tol = 1e-8
-  end_time = 2.0
+  end_time = 20.0
   [./TimeStepper]
     type = IterationAdaptiveDT
     dt = 0.0005
