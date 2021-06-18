@@ -1,0 +1,1068 @@
+
+
+Framework Information:
+MOOSE Version:           git commit 22ccc79ac7 on 2020-11-19
+LibMesh Version:         4bf75a35d0f989335a2eb716912c3de4e7be20ea
+PETSc Version:           3.14.2
+SLEPc Version:           3.14.0
+Current Time:            Wed Feb  3 14:53:23 2021
+Executable Timestamp:    Thu Jan 21 16:59:52 2021
+
+Parallelism:
+  Num Processors:          1
+  Num Threads:             1
+
+Mesh: 
+  Parallel Type:           replicated
+  Mesh Dimension:          2
+  Spatial Dimension:       2
+  Nodes:                   
+    Total:                 1681
+    Local:                 1681
+  Elems:                   
+    Total:                 1600
+    Local:                 1600
+  Num Subdomains:          1
+  Num Partitions:          1
+
+Nonlinear System:
+  Num DOFs:                5043
+  Num Local DOFs:          5043
+  Variables:               { "w" "etaa0" "etab0" } 
+  Finite Element Types:    "LAGRANGE" 
+  Approximation Orders:    "FIRST" 
+
+Auxiliary System:
+  Num DOFs:                12962
+  Num Local DOFs:          12962
+  Variables:               { "bnds" "T" } { "err_eta" "err_bnds" "ind_eta" "ind_bnds" "kappaa" "kappab" 
+                             } 
+  Finite Element Types:    "LAGRANGE" "MONOMIAL" 
+  Approximation Orders:    "FIRST" "CONSTANT" 
+
+Execution Information:
+  Executioner:             Transient
+  TimeStepper:             IterationAdaptiveDT
+  Solver Mode:             Preconditioned JFNK
+  MOOSE Preconditioner:    SMP
+
+[31mLEGACY MODES ENABLED:[39m
+ This application uses the legacy material output option: material properties are output only on TIMESTEP_END, not INITIAL. To remove this message, set 'use_legacy_material_output' to false in this application. If there are gold output files that contain material property output for which output occurs on INITIAL, then these will generate diffs due to zero values being stored, and these tests should be re-golded.
+[39m
+Initial adaptivity step 1 of 3                                                             [[33m  1.64 s[39m]
+Mesh unchanged, skipping remaining steps...
+
+Time Step 0, time = 0
+
+Time Step 1, time = 0.0005, dt = 0.0005
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+Nonlinear solve converged due to CONVERGED_FNORM_RELATIVE iterations 3
+[32m Solve Converged![39m
+
+Time Step 2, time = 0.0011, dt = 0.0006
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 3
+[32m Solve Converged![39m
+
+Time Step 3, time = 0.00182, dt = 0.00072
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 3
+[32m Solve Converged![39m
+
+Time Step 4, time = 0.002684, dt = 0.000864
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 3
+[32m Solve Converged![39m
+
+Time Step 5, time = 0.0037208, dt = 0.0010368
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 1
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+Nonlinear solve converged due to CONVERGED_FNORM_RELATIVE iterations 3
+[32m Solve Converged![39m
+
+Time Step 6, time = 0.00496496, dt = 0.00124416
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 3
+[32m Solve Converged![39m
+
+Time Step 7, time = 0.00645795, dt = 0.00149299
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 1
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 3
+[32m Solve Converged![39m
+
+Time Step 8, time = 0.00824954, dt = 0.00179159
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 3
+[32m Solve Converged![39m
+
+Time Step 9, time = 0.0103995, dt = 0.00214991
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 3
+[32m Solve Converged![39m
+
+Time Step 10, time = 0.0129793, dt = 0.00257989
+ 0 Nonlinear |R| = [32m1.115242e+00[39m
+      0 Linear |R| = [32m1.115242e+00[39m
+      1 Linear |R| = [32m7.985433e-03[39m
+      2 Linear |R| = [32m7.143971e-05[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+ 1 Nonlinear |R| = [32m4.466534e-02[39m
+      0 Linear |R| = [32m4.466534e-02[39m
+      1 Linear |R| = [32m4.641125e-04[39m
+      2 Linear |R| = [32m1.693674e-06[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+ 2 Nonlinear |R| = [32m1.793268e-06[39m
+      0 Linear |R| = [32m1.793268e-06[39m
+      1 Linear |R| = [32m3.402976e-08[39m
+      2 Linear |R| = [32m1.835718e-09[39m
+      3 Linear |R| = [32m8.891710e-11[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+ 3 Nonlinear |R| = [32m8.891012e-11[39m
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 3
+[32m Solve Converged![39m
+
+Time Step 11, time = 0.0160752, dt = 0.00309587
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 3
+[32m Solve Converged![39m
+Mesh unchanged, skipping remaining steps...
+
+Time Step 12, time = 0.0197903, dt = 0.00371504
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 3
+[32m Solve Converged![39m
+Mesh unchanged, skipping remaining steps...
+
+Time Step 13, time = 0.0242483, dt = 0.00445805
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 3
+[32m Solve Converged![39m
+
+Time Step 14, time = 0.029598, dt = 0.00534966
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+Nonlinear solve did not converge due to DIVERGED_LINE_SEARCH iterations 1
+[31m Solve Did NOT Converge![39m
+Aborting as solve did not converge
+
+Solve failed, cutting timestep.
+
+Time Step 14, time = 0.0279931, dt = 0.00374476
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 16
+  Linear solve converged due to CONVERGED_RTOL iterations 9
+  Linear solve converged due to CONVERGED_RTOL iterations 12
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve converged due to CONVERGED_RTOL iterations 12
+  Linear solve converged due to CONVERGED_RTOL iterations 11
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve converged due to CONVERGED_RTOL iterations 15
+  Linear solve converged due to CONVERGED_RTOL iterations 15
+  Linear solve converged due to CONVERGED_RTOL iterations 11
+  Linear solve converged due to CONVERGED_RTOL iterations 8
+Nonlinear solve did not converge due to DIVERGED_MAX_IT iterations 15
+[31m Solve Did NOT Converge![39m
+Aborting as solve did not converge
+
+Solve failed, cutting timestep.
+
+Time Step 14, time = 0.0268696, dt = 0.00262133
+  Linear solve converged due to CONVERGED_RTOL iterations 16
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 19
+  Linear solve converged due to CONVERGED_RTOL iterations 8
+  Linear solve converged due to CONVERGED_RTOL iterations 15
+  Linear solve converged due to CONVERGED_RTOL iterations 11
+  Linear solve converged due to CONVERGED_RTOL iterations 10
+  Linear solve converged due to CONVERGED_RTOL iterations 8
+  Linear solve converged due to CONVERGED_RTOL iterations 8
+  Linear solve converged due to CONVERGED_RTOL iterations 10
+  Linear solve converged due to CONVERGED_RTOL iterations 12
+  Linear solve converged due to CONVERGED_RTOL iterations 9
+  Linear solve converged due to CONVERGED_RTOL iterations 11
+  Linear solve converged due to CONVERGED_RTOL iterations 11
+  Linear solve converged due to CONVERGED_RTOL iterations 11
+Nonlinear solve did not converge due to DIVERGED_MAX_IT iterations 15
+[31m Solve Did NOT Converge![39m
+Aborting as solve did not converge
+
+Solve failed, cutting timestep.
+
+Time Step 14, time = 0.0260832, dt = 0.00183493
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 4
+[32m Solve Converged![39m
+
+Time Step 15, time = 0.0279182, dt = 0.00183493
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 3
+[32m Solve Converged![39m
+
+Time Step 16, time = 0.0301201, dt = 0.00220192
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 3
+[32m Solve Converged![39m
+Mesh unchanged, skipping remaining steps...
+
+Time Step 17, time = 0.0327624, dt = 0.0026423
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 18
+  Linear solve converged due to CONVERGED_RTOL iterations 17
+  Linear solve converged due to CONVERGED_RTOL iterations 7
+  Linear solve converged due to CONVERGED_RTOL iterations 14
+  Linear solve converged due to CONVERGED_RTOL iterations 13
+  Linear solve converged due to CONVERGED_RTOL iterations 11
+  Linear solve converged due to CONVERGED_RTOL iterations 13
+  Linear solve converged due to CONVERGED_RTOL iterations 16
+  Linear solve converged due to CONVERGED_RTOL iterations 16
+  Linear solve converged due to CONVERGED_RTOL iterations 15
+  Linear solve converged due to CONVERGED_RTOL iterations 15
+  Linear solve converged due to CONVERGED_RTOL iterations 13
+  Linear solve converged due to CONVERGED_RTOL iterations 15
+Nonlinear solve did not converge due to DIVERGED_MAX_IT iterations 15
+[31m Solve Did NOT Converge![39m
+Aborting as solve did not converge
+
+Solve failed, cutting timestep.
+
+Time Step 17, time = 0.0319697, dt = 0.00184961
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 3
+[32m Solve Converged![39m
+Mesh unchanged, skipping remaining steps...
+
+Time Step 18, time = 0.0338193, dt = 0.00184961
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 3
+[32m Solve Converged![39m
+Mesh unchanged, skipping remaining steps...
+
+Time Step 19, time = 0.0360388, dt = 0.00221954
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 3
+[32m Solve Converged![39m
+Mesh unchanged, skipping remaining steps...
+
+Time Step 20, time = 0.0387023, dt = 0.00266344
+ 0 Nonlinear |R| = [32m7.473455e-01[39m
+      0 Linear |R| = [32m7.473455e-01[39m
+      1 Linear |R| = [32m1.092327e-02[39m
+      2 Linear |R| = [32m1.032539e-04[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+ 1 Nonlinear |R| = [32m2.436875e-02[39m
+      0 Linear |R| = [32m2.436875e-02[39m
+      1 Linear |R| = [32m1.614406e-04[39m
+      2 Linear |R| = [32m7.889553e-07[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+ 2 Nonlinear |R| = [32m7.913750e-07[39m
+      0 Linear |R| = [32m7.913750e-07[39m
+      1 Linear |R| = [32m4.036074e-08[39m
+      2 Linear |R| = [32m6.967538e-10[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+ 3 Nonlinear |R| = [32m6.967623e-10[39m
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 3
+[32m Solve Converged![39m
+
+Outlier Variable Residual Norms:
+  w: [31m6.863832e-10[39m
+
+Time Step 21, time = 0.0418984, dt = 0.00319613
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 3
+[32m Solve Converged![39m
+
+Time Step 22, time = 0.0457338, dt = 0.00383536
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 3
+[32m Solve Converged![39m
+
+Time Step 23, time = 0.0503362, dt = 0.00460243
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 3
+[32m Solve Converged![39m
+Mesh unchanged, skipping remaining steps...
+
+Time Step 24, time = 0.0558591, dt = 0.00552291
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 3
+[32m Solve Converged![39m
+Mesh unchanged, skipping remaining steps...
+
+Time Step 25, time = 0.0624866, dt = 0.0066275
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 3
+[32m Solve Converged![39m
+Mesh unchanged, skipping remaining steps...
+
+Time Step 26, time = 0.0704396, dt = 0.007953
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 4
+[32m Solve Converged![39m
+
+Time Step 27, time = 0.0799832, dt = 0.0095436
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 4
+[32m Solve Converged![39m
+
+Time Step 28, time = 0.0914355, dt = 0.0114523
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 4
+[32m Solve Converged![39m
+
+Time Step 29, time = 0.105178, dt = 0.0137428
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 4
+[32m Solve Converged![39m
+
+Time Step 30, time = 0.12167, dt = 0.0164913
+ 0 Nonlinear |R| = [32m7.045187e-01[39m
+      0 Linear |R| = [32m7.045187e-01[39m
+      1 Linear |R| = [32m1.268725e-02[39m
+      2 Linear |R| = [32m3.556496e-04[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+ 1 Nonlinear |R| = [32m1.499973e-01[39m
+      0 Linear |R| = [32m1.499973e-01[39m
+      1 Linear |R| = [32m3.950855e-03[39m
+      2 Linear |R| = [32m5.382514e-05[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+ 2 Nonlinear |R| = [32m1.008174e-03[39m
+      0 Linear |R| = [32m1.008174e-03[39m
+      1 Linear |R| = [32m3.425470e-05[39m
+      2 Linear |R| = [32m6.296311e-07[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+ 3 Nonlinear |R| = [32m6.317393e-07[39m
+      0 Linear |R| = [32m6.317393e-07[39m
+      1 Linear |R| = [32m7.294178e-08[39m
+      2 Linear |R| = [32m8.338372e-09[39m
+      3 Linear |R| = [32m1.357701e-09[39m
+      4 Linear |R| = [32m1.695462e-10[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+ 4 Nonlinear |R| = [32m1.774060e-10[39m
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 4
+[32m Solve Converged![39m
+
+Outlier Variable Residual Norms:
+  etab0: [31m1.604479e-10[39m
+
+Time Step 31, time = 0.141459, dt = 0.0197896
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 8
+  Linear solve converged due to CONVERGED_RTOL iterations 7
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 5
+[32m Solve Converged![39m
+
+Time Step 32, time = 0.165207, dt = 0.0237475
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 10
+  Linear solve converged due to CONVERGED_RTOL iterations 10
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 5
+[32m Solve Converged![39m
+
+Time Step 33, time = 0.193704, dt = 0.028497
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 10
+  Linear solve converged due to CONVERGED_RTOL iterations 10
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 5
+[32m Solve Converged![39m
+
+Time Step 34, time = 0.2279, dt = 0.0341964
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 9
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+Nonlinear solve did not converge due to DIVERGED_MAX_IT iterations 15
+[31m Solve Did NOT Converge![39m
+Aborting as solve did not converge
+
+Solve failed, cutting timestep.
+
+Time Step 34, time = 0.217641, dt = 0.0239375
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 13
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+Nonlinear solve did not converge due to DIVERGED_MAX_IT iterations 15
+[31m Solve Did NOT Converge![39m
+Aborting as solve did not converge
+
+Solve failed, cutting timestep.
+
+Time Step 34, time = 0.21046, dt = 0.0167563
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 9
+  Linear solve converged due to CONVERGED_RTOL iterations 8
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 5
+[32m Solve Converged![39m
+
+Time Step 35, time = 0.227216, dt = 0.0167563
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 4
+[32m Solve Converged![39m
+
+Time Step 36, time = 0.247324, dt = 0.0201075
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 4
+[32m Solve Converged![39m
+
+Time Step 37, time = 0.271453, dt = 0.024129
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 17
+  Linear solve converged due to CONVERGED_RTOL iterations 19
+  Linear solve converged due to CONVERGED_RTOL iterations 19
+  Linear solve converged due to CONVERGED_RTOL iterations 16
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 7
+[32m Solve Converged![39m
+
+Time Step 38, time = 0.300408, dt = 0.0289548
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve converged due to CONVERGED_RTOL iterations 30
+  Linear solve converged due to CONVERGED_RTOL iterations 21
+  Linear solve converged due to CONVERGED_RTOL iterations 23
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 8
+[32m Solve Converged![39m
+
+Time Step 39, time = 0.335153, dt = 0.0347458
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 8
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+  Linear solve converged due to CONVERGED_RTOL iterations 8
+  Linear solve converged due to CONVERGED_RTOL iterations 8
+  Linear solve converged due to CONVERGED_RTOL iterations 9
+  Linear solve converged due to CONVERGED_RTOL iterations 9
+  Linear solve converged due to CONVERGED_RTOL iterations 9
+  Linear solve converged due to CONVERGED_RTOL iterations 9
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 10
+[32m Solve Converged![39m
+
+Time Step 40, time = 0.376848, dt = 0.0416949
+ 0 Nonlinear |R| = [32m7.385647e-01[39m
+      0 Linear |R| = [32m7.385647e-01[39m
+      1 Linear |R| = [32m2.930718e-02[39m
+      2 Linear |R| = [32m1.128682e-03[39m
+      3 Linear |R| = [32m2.809270e-04[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+ 1 Nonlinear |R| = [32m3.923331e-01[39m
+      0 Linear |R| = [32m3.923331e-01[39m
+      1 Linear |R| = [32m1.000848e-02[39m
+      2 Linear |R| = [32m2.413986e-04[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+ 2 Nonlinear |R| = [32m1.977938e-02[39m
+      0 Linear |R| = [32m1.977938e-02[39m
+      1 Linear |R| = [32m8.209308e-04[39m
+      2 Linear |R| = [32m5.097583e-05[39m
+      3 Linear |R| = [32m2.194602e-06[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+ 3 Nonlinear |R| = [32m1.667331e-05[39m
+      0 Linear |R| = [32m1.667331e-05[39m
+      1 Linear |R| = [32m4.308328e-06[39m
+      2 Linear |R| = [32m6.736155e-07[39m
+      3 Linear |R| = [32m1.360526e-07[39m
+      4 Linear |R| = [32m2.481894e-08[39m
+      5 Linear |R| = [32m1.252011e-08[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+ 4 Nonlinear |R| = [32m1.216847e-07[39m
+      0 Linear |R| = [32m1.216847e-07[39m
+      1 Linear |R| = [32m4.998815e-08[39m
+      2 Linear |R| = [32m9.403795e-09[39m
+      3 Linear |R| = [32m3.750860e-09[39m
+      4 Linear |R| = [32m1.764009e-09[39m
+      5 Linear |R| = [32m3.027874e-10[39m
+      6 Linear |R| = [32m5.719963e-11[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+ 5 Nonlinear |R| = [32m6.084882e-11[39m
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 5
+[32m Solve Converged![39m
+
+Time Step 41, time = 0.426882, dt = 0.0500339
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 5
+[32m Solve Converged![39m
+
+Time Step 42, time = 0.486923, dt = 0.0600407
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve did not converge due to DIVERGED_NANORINF iterations 0
+Nonlinear solve did not converge due to DIVERGED_LINEAR_SOLVE iterations 1
+[31m Solve Did NOT Converge![39m
+Aborting as solve did not converge
+
+Solve failed, cutting timestep.
+
+Time Step 42, time = 0.468911, dt = 0.0420285
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 5
+[32m Solve Converged![39m
+
+Time Step 43, time = 0.510939, dt = 0.0420285
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 5
+[32m Solve Converged![39m
+
+Time Step 44, time = 0.561373, dt = 0.0504342
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 5
+[32m Solve Converged![39m
+
+Time Step 45, time = 0.621894, dt = 0.060521
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+Nonlinear solve did not converge due to DIVERGED_LINE_SEARCH iterations 9
+[31m Solve Did NOT Converge![39m
+Aborting as solve did not converge
+
+Solve failed, cutting timestep.
+
+Time Step 45, time = 0.603738, dt = 0.0423647
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 5
+[32m Solve Converged![39m
+
+Time Step 46, time = 0.646103, dt = 0.0423647
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 5
+[32m Solve Converged![39m
+
+Time Step 47, time = 0.69694, dt = 0.0508376
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 5
+[32m Solve Converged![39m
+
+Time Step 48, time = 0.757946, dt = 0.0610052
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve converged due to CONVERGED_RTOL iterations 7
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+  Linear solve converged due to CONVERGED_RTOL iterations 7
+  Linear solve converged due to CONVERGED_RTOL iterations 8
+  Linear solve converged due to CONVERGED_RTOL iterations 7
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+Nonlinear solve did not converge due to DIVERGED_MAX_IT iterations 15
+[31m Solve Did NOT Converge![39m
+Aborting as solve did not converge
+
+Solve failed, cutting timestep.
+
+Time Step 48, time = 0.739644, dt = 0.0427036
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 4
+[32m Solve Converged![39m
+
+Time Step 49, time = 0.782348, dt = 0.0427036
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 5
+[32m Solve Converged![39m
+
+Time Step 50, time = 0.833592, dt = 0.0512443
+ 0 Nonlinear |R| = [32m6.355920e-01[39m
+      0 Linear |R| = [32m6.355920e-01[39m
+      1 Linear |R| = [32m2.435640e-02[39m
+      2 Linear |R| = [32m1.403300e-03[39m
+      3 Linear |R| = [32m1.819041e-04[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+ 1 Nonlinear |R| = [32m3.915751e-01[39m
+      0 Linear |R| = [32m3.915751e-01[39m
+      1 Linear |R| = [32m1.046241e-02[39m
+      2 Linear |R| = [32m1.793147e-04[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+ 2 Nonlinear |R| = [32m2.164323e-02[39m
+      0 Linear |R| = [32m2.164323e-02[39m
+      1 Linear |R| = [32m9.814455e-04[39m
+      2 Linear |R| = [32m6.123320e-05[39m
+      3 Linear |R| = [32m2.842288e-06[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+ 3 Nonlinear |R| = [32m4.464983e-05[39m
+      0 Linear |R| = [32m4.464983e-05[39m
+      1 Linear |R| = [32m1.302916e-05[39m
+      2 Linear |R| = [32m1.802714e-06[39m
+      3 Linear |R| = [32m3.136975e-07[39m
+      4 Linear |R| = [32m3.073322e-08[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+ 4 Nonlinear |R| = [32m8.508136e-07[39m
+      0 Linear |R| = [32m8.508136e-07[39m
+      1 Linear |R| = [32m3.341784e-07[39m
+      2 Linear |R| = [32m5.433469e-08[39m
+      3 Linear |R| = [32m9.788078e-09[39m
+      4 Linear |R| = [32m1.120356e-09[39m
+      5 Linear |R| = [32m4.070340e-10[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+ 5 Nonlinear |R| = [32m7.380640e-10[39m
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 5
+[32m Solve Converged![39m
+
+Time Step 51, time = 0.895085, dt = 0.0614932
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 7
+[32m Solve Converged![39m
+
+Time Step 52, time = 0.968877, dt = 0.0737919
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 6
+[32m Solve Converged![39m
+
+Time Step 53, time = 1.05743, dt = 0.0885502
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve converged due to CONVERGED_RTOL iterations 30
+  Linear solve converged due to CONVERGED_RTOL iterations 27
+  Linear solve converged due to CONVERGED_RTOL iterations 27
+  Linear solve converged due to CONVERGED_RTOL iterations 22
+  Linear solve converged due to CONVERGED_RTOL iterations 26
+  Linear solve converged due to CONVERGED_RTOL iterations 24
+  Linear solve converged due to CONVERGED_RTOL iterations 24
+  Linear solve converged due to CONVERGED_RTOL iterations 25
+Nonlinear solve did not converge due to DIVERGED_MAX_IT iterations 15
+[31m Solve Did NOT Converge![39m
+Aborting as solve did not converge
+
+Solve failed, cutting timestep.
+
+Time Step 53, time = 1.03086, dt = 0.0619852
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 11
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 7
+[32m Solve Converged![39m
+
+Time Step 54, time = 1.09285, dt = 0.0619852
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 6
+[32m Solve Converged![39m
+
+Time Step 55, time = 1.16723, dt = 0.0743822
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 7
+[32m Solve Converged![39m
+
+Time Step 56, time = 1.25649, dt = 0.0892586
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+  Linear solve converged due to CONVERGED_RTOL iterations 10
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve converged due to CONVERGED_RTOL iterations 25
+  Linear solve converged due to CONVERGED_RTOL iterations 20
+  Linear solve converged due to CONVERGED_RTOL iterations 24
+  Linear solve converged due to CONVERGED_RTOL iterations 22
+  Linear solve converged due to CONVERGED_RTOL iterations 19
+  Linear solve converged due to CONVERGED_RTOL iterations 23
+Nonlinear solve did not converge due to DIVERGED_MAX_IT iterations 15
+[31m Solve Did NOT Converge![39m
+Aborting as solve did not converge
+
+Solve failed, cutting timestep.
+
+Time Step 56, time = 1.22971, dt = 0.062481
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 6
+[32m Solve Converged![39m
+
+Time Step 57, time = 1.29219, dt = 0.062481
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 15
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 6
+[32m Solve Converged![39m
+
+Time Step 58, time = 1.36717, dt = 0.0749772
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 7
+[32m Solve Converged![39m
+
+Time Step 59, time = 1.45714, dt = 0.0899727
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 9
+[32m Solve Converged![39m
+
+Time Step 60, time = 1.56511, dt = 0.107967
+ 0 Nonlinear |R| = [32m6.161681e-01[39m
+      0 Linear |R| = [32m6.161681e-01[39m
+      1 Linear |R| = [32m8.708970e-02[39m
+      2 Linear |R| = [32m6.909170e-03[39m
+      3 Linear |R| = [32m6.762414e-04[39m
+      4 Linear |R| = [32m1.445874e-04[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+ 1 Nonlinear |R| = [32m4.763832e-01[39m
+      0 Linear |R| = [32m4.763832e-01[39m
+      1 Linear |R| = [32m5.859169e-02[39m
+      2 Linear |R| = [32m5.335882e-03[39m
+      3 Linear |R| = [32m4.737817e-04[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+ 2 Nonlinear |R| = [32m3.042616e-01[39m
+      0 Linear |R| = [32m3.042616e-01[39m
+      1 Linear |R| = [32m3.463002e-02[39m
+      2 Linear |R| = [32m3.428148e-03[39m
+      3 Linear |R| = [32m2.874526e-04[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+ 3 Nonlinear |R| = [32m1.259588e-01[39m
+      0 Linear |R| = [32m1.259588e-01[39m
+      1 Linear |R| = [32m3.599777e-03[39m
+      2 Linear |R| = [32m3.623142e-04[39m
+      3 Linear |R| = [32m1.911476e-04[39m
+      4 Linear |R| = [32m9.528539e-05[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+ 4 Nonlinear |R| = [32m8.237743e-03[39m
+      0 Linear |R| = [32m8.237743e-03[39m
+      1 Linear |R| = [32m1.296230e-03[39m
+      2 Linear |R| = [32m2.480629e-04[39m
+      3 Linear |R| = [32m2.004885e-05[39m
+      4 Linear |R| = [32m3.279958e-06[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+ 5 Nonlinear |R| = [32m1.821435e-03[39m
+      0 Linear |R| = [32m1.821435e-03[39m
+      1 Linear |R| = [32m5.318031e-04[39m
+      2 Linear |R| = [32m9.080799e-05[39m
+      3 Linear |R| = [32m7.089565e-06[39m
+      4 Linear |R| = [32m1.349095e-06[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+ 6 Nonlinear |R| = [32m4.089600e-04[39m
+      0 Linear |R| = [32m4.089600e-04[39m
+      1 Linear |R| = [32m1.503418e-04[39m
+      2 Linear |R| = [32m2.486140e-05[39m
+      3 Linear |R| = [32m3.435079e-06[39m
+      4 Linear |R| = [32m1.468823e-06[39m
+      5 Linear |R| = [32m6.023743e-07[39m
+      6 Linear |R| = [32m5.829242e-08[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+ 7 Nonlinear |R| = [32m5.222683e-05[39m
+      0 Linear |R| = [32m5.222683e-05[39m
+      1 Linear |R| = [32m2.149692e-05[39m
+      2 Linear |R| = [32m4.461642e-06[39m
+      3 Linear |R| = [32m2.112079e-06[39m
+      4 Linear |R| = [32m9.019353e-07[39m
+      5 Linear |R| = [32m1.898986e-07[39m
+      6 Linear |R| = [32m1.559279e-08[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+ 8 Nonlinear |R| = [32m2.173036e-06[39m
+      0 Linear |R| = [32m2.173036e-06[39m
+      1 Linear |R| = [32m8.897034e-07[39m
+      2 Linear |R| = [32m3.893410e-07[39m
+      3 Linear |R| = [32m2.343920e-07[39m
+      4 Linear |R| = [32m4.356541e-08[39m
+      5 Linear |R| = [32m7.205926e-09[39m
+      6 Linear |R| = [32m7.104794e-10[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+ 9 Nonlinear |R| = [32m4.050093e-08[39m
+      0 Linear |R| = [32m4.050093e-08[39m
+      1 Linear |R| = [32m1.785357e-08[39m
+      2 Linear |R| = [32m1.023590e-08[39m
+      3 Linear |R| = [32m4.479637e-09[39m
+      4 Linear |R| = [32m6.744438e-10[39m
+      5 Linear |R| = [32m9.605971e-11[39m
+      6 Linear |R| = [32m9.474789e-12[39m
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+10 Nonlinear |R| = [32m3.474183e-11[39m
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 10
+[32m Solve Converged![39m
+
+Time Step 61, time = 1.69467, dt = 0.129561
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+  Linear solve converged due to CONVERGED_RTOL iterations 12
+  Linear solve converged due to CONVERGED_RTOL iterations 8
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 12
+[32m Solve Converged![39m
+
+Time Step 62, time = 1.85014, dt = 0.155473
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+Nonlinear solve did not converge due to DIVERGED_MAX_IT iterations 15
+[31m Solve Did NOT Converge![39m
+Aborting as solve did not converge
+
+Solve failed, cutting timestep.
+
+Time Step 62, time = 1.8035, dt = 0.108831
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 8
+[32m Solve Converged![39m
+
+Time Step 63, time = 1.91233, dt = 0.108831
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve converged due to CONVERGED_RTOL iterations 14
+  Linear solve converged due to CONVERGED_RTOL iterations 13
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve converged due to CONVERGED_RTOL iterations 28
+  Linear solve converged due to CONVERGED_RTOL iterations 30
+  Linear solve converged due to CONVERGED_RTOL iterations 27
+  Linear solve converged due to CONVERGED_RTOL iterations 27
+  Linear solve converged due to CONVERGED_RTOL iterations 21
+  Linear solve converged due to CONVERGED_RTOL iterations 22
+  Linear solve converged due to CONVERGED_RTOL iterations 17
+Nonlinear solve did not converge due to DIVERGED_MAX_IT iterations 15
+[31m Solve Did NOT Converge![39m
+Aborting as solve did not converge
+
+Solve failed, cutting timestep.
+
+Time Step 63, time = 1.87968, dt = 0.0761817
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 6
+[32m Solve Converged![39m
+
+Time Step 64, time = 1.95586, dt = 0.0761817
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve did not converge due to DIVERGED_ITS iterations 30
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+  Linear solve converged due to CONVERGED_RTOL iterations 5
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+  Linear solve converged due to CONVERGED_RTOL iterations 6
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 8
+[32m Solve Converged![39m
+
+Time Step 65, time = 2, dt = 0.0441362
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 2
+  Linear solve converged due to CONVERGED_RTOL iterations 3
+  Linear solve converged due to CONVERGED_RTOL iterations 4
+Nonlinear solve converged due to CONVERGED_FNORM_ABS iterations 4
+[32m Solve Converged![39m
